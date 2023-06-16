@@ -1,6 +1,5 @@
 <?php
 include_once '../Model/conexion.php';
-$objeto = new Conexion();
 $conexion = $objeto->Conectar();
 
 //recepción de datos enviados mediante POST desde ajax

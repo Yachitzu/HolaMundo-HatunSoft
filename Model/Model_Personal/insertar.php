@@ -2,7 +2,6 @@
     class CrudI{
         public function insertarPersonas(){
             include_once("../conexion.php");
-            $objeto = new conexion();
             $con = $objeto->Conectar();
             
             $Cedula = $_POST["cedula"];
