@@ -26,10 +26,10 @@ $_SESSION['rol'] = $rol;
 if ($rol == "Miembro") {
     header("location:Views/Paginas/Miembro.php");
 } else {
-    if ($rol == "Administrador") {
+    if ($rol == "Gerente") {
         header("location:Views/Paginas/Gerente.php");
     } else {
-        if ($rol == "Gerente") {
+        if ($rol == "Administrador") {
             header("location:Views/Paginas/Administrador.php");
         } else {
             header("location:index.php");
