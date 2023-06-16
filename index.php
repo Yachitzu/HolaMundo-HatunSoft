@@ -6,7 +6,7 @@
     <title>Login</title>
 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="plugins/sweetalert2/sweetalert2.min.css">  
     
     <link rel="stylesheet" type="text/css" href="css/fuentes/iconic/css/material-design-iconic-font.min.css">
