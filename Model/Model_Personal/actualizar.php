@@ -1,7 +1,7 @@
 <?php
     class CrudA{
         public function actualizarPersonas(){
-            include_once("conexion.php");
+            include_once("../conexion.php");
             $objeto = new conexion();
             $conexion = $objeto->Conectar();
 

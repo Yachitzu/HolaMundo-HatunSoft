@@ -1,7 +1,7 @@
 <?php
     class CrudS{
         public function obtenerPersonas(){
-            include_once("./Model/conexion.php");
+            include_once("../conexion.php");
             $objeto = new conexion();
             $conexion = $objeto->Conectar();
             $sql = "SELECT * FROM personal";

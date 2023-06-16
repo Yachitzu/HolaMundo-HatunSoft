@@ -1,7 +1,7 @@
 <?php
     class CrudI{
         public function insertarPersonas(){
-            include_once("../Model/conexion.php");
+            include_once("../conexion.php");
             $objeto = new conexion();
             $con = $objeto->Conectar();
             

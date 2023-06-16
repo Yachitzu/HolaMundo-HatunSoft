@@ -1,5 +1,5 @@
 <?php
-    include_once("../Model/conexion.php");
+    include_once("../conexion.php");
     class CrudE{
         public function eliminarPersonas(){
             $objeto = new conexion();
