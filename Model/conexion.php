@@ -1,5 +1,4 @@
 <?php
-
     function Conectar(){
         define("servidor" , "localhost");
         define("nombreBD" , "hatunsoft");
