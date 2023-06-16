@@ -4,7 +4,7 @@
             include_once("./Model/conexion.php");
             $objeto = new conexion();
             $conexion = $objeto->Conectar();
-            $sql = "SELECT * FROM usuarios WHERE estado = 'T'";
+            $sql = "SELECT * FROM personal";
             $resultado = $conexion -> prepare($sql);
             $resultado -> execute();
             $data = $resultado -> fetchAll(PDO::FETCH_ASSOC);
