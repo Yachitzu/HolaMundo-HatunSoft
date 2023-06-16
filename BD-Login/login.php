@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 include_once '../Model/conexion.php';
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
@@ -13,9 +11,20 @@ $consulta = "SELECT * FROM personal WHERE NOM_PER='$usuario' AND CED_PER='$passw
 $resultado = $conexion->prepare($consulta);
 $resultado->execute();
 
+$cargo = "SELECT ROL_PER FROM personal WHERE NOM_PER='$usuario' AND CED_PER='$password' ";
+$resultadoC = $conexion->prepare($cargo);
+$resultadoC->execute();
+$r=$resultadoCfetchAll();
+$_SESSION["s_rol"] = $resultadoC;
+$rol = "";
+foreach($r as $resu){
+    $rol .= $resu['ROL_USU'];
+}
+
 if($resultado->rowCount() >= 1){
     $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
     $_SESSION["s_usuario"] = $usuario;
+    
 }else{
     $_SESSION["s_usuario"] = null;
     $data=null;

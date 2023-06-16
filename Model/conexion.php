@@ -1,6 +1,6 @@
 <?php
-class Conexion{
-    public function Conectar(){
+
+    function Conectar(){
         define("servidor" , "localhost");
         define("nombreBD" , "hatunsoft");
         define("usuario" , "root");
@@ -13,5 +13,5 @@ class Conexion{
             die("Error en la conexion: " . $e->getMessage());
         }
     } 
-}
+
 ?>

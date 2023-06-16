@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,9 +15,11 @@
 
 </head>
 <body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <div class="container-login">
         <div class="wrap-login">
-            <form class="login-form validate-form" id="formLogin" action="" method="post">
+            <form class="login-form validate-form" id="formLogin" action="validar.php" method="post">
                 <span class="login-form-title">Ingreso de Usuarios</span>
                 
                 <div class="wrap-input100" data-validate = "Usuario incorrecto">
@@ -43,7 +46,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>    
     <script src="popper/popper.min.js"></script>         
     <script src="plugins/sweetalert2/sweetalert2.all.min.js"></script>    
-    <script src="codigo.js"></script> 
+    
 
 </body>
 </html>
