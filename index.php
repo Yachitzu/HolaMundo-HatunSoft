@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="estilos.css">
-        <link rel="stylesheet" href="plugins/sweetalert2/sweetalert2.min.css">    
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="plugins/sweetalert2/sweetalert2.min.css">  
+    
+    <link rel="stylesheet" type="text/css" href="css/fuentes/iconic/css/material-design-iconic-font.min.css">
+
 </head>
 <body>
 <div class="container-login">
