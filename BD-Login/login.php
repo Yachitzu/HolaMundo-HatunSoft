@@ -18,7 +18,7 @@ $resultado->execute();
 if($resultado->rowCount() >= 1){
     $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
     $_SESSION["s_usuario"] = $usuario;
-    alert("SE INGRESO");
+  
 }else{
     $_SESSION["s_usuario"] = null;
     $data=null;
